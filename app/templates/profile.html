@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h2 style="text-align:center">User Profile Card</h2>
+
+<div class="card">
+  <section>
+    <img src="{{url_for('static', filename='profile_image1.png')}}" />
+    <div id="fullname"><h1>{{name}}</h1></div>
+    <div id="username" >@mjane</div>
+    <p class="profile">Kingston, Jamaica</p>
+    <p class = "profile"> {{ date }} </p>
+  </section>
+  <section>
+    <div class = "about"><p>I am a smart and atllented young man who loves software and web development.
+      You can contact me if you would like to collaborate on a new project.
+    </p></div>
+    <br>
+    <div class="profile-stats">
+      <ul>
+        <li><span class="count"><b>7</b></span> Posts</li>
+        <li><span class="count"><b>100</b></span> Following</li>
+        <li><span class="count"><b>250</b> </span> Followers</li>
+      </ul>
+    </div>
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-reddit"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
+    <p><button id = "follow">Follow</button></p>
+  </section>
+  
+</div>
+
+{% endblock %}

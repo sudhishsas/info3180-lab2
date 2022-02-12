@@ -1,3 +1,125 @@
 body {
     padding-top: 5rem;
 }
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+    
+  }
+
+  section:nth-child(1){
+      background-color: rgb(86, 86, 243);
+  }
+  .card img{
+      padding: 20px;
+      width: 50%;
+      border-radius: 50%;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+ #follow{
+    border: none;
+    outline: 10;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(50, 136, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    font-size: 15px;
+    border-radius: 9%;
+  }
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .fa {
+  padding: 21px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  }
+  .fa:hover {
+      opacity: 0.6;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  .fa-reddit {
+    
+    background: #007bb5;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  
+  .profile-stats ul {
+    display: flex;
+    text-align: center;
+    padding: 1.2rem 0;
+    list-style-type: none;
+}
+
+.profile-stats li {
+    font-size: 18;
+    flex: 1;
+    margin: 0;
+}
+
+.count {
+    display: block;
+    font-size: larger;
+}
+
+.about{
+  padding: 10px;
+}
+
+#fullname{
+  font-size: 20px;
+  font-display: bold;
+  color:white
+}
+.profile{
+  color: white;
+
+}

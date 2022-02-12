@@ -4,7 +4,8 @@ Jinja2 Documentation:    https://jinja.palletsprojects.com/
 Werkzeug Documentation:  https://werkzeug.palletsprojects.com/
 This file creates your application.
 """
-
+#from datetime import datetime
+import datetime
 from app import app
 from flask import render_template, request, redirect, url_for, flash
 
@@ -24,7 +25,15 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+@app.route('/profile/')
+def profile():
+    return render_template('profile.html', name="Mary Jane" , date = format_date_joined())
 
+
+def format_date_joined():
+    now = datetime.datetime.now() # today's date
+    date_joined = datetime.date(2021, 8, 7) # a specific date
+    return ("Joined " + date_joined.strftime("%B, %Y"))
 ###
 # The functions below should be applicable to all Flask apps.
 ###
